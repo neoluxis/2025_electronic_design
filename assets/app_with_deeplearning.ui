@@ -43,29 +43,28 @@
         <layout class="QVBoxLayout" name="viewBtns">
          <item>
           <widget class="QPushButton" name="btnReboot">
+           <property name="styleSheet">
+            <string notr="true">color: rgb(255, 0, 4);</string>
+           </property>
            <property name="text">
-            <string>系统重启</string>
+            <string>⚠️ 系统重启</string>
            </property>
           </widget>
          </item>
          <item>
           <widget class="QPushButton" name="btnPoweroff">
+           <property name="styleSheet">
+            <string notr="true">color: rgb(255, 0, 4);</string>
+           </property>
            <property name="text">
-            <string>系统关机</string>
+            <string>⚠️ 系统关机</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QPushButton" name="btnStart">
+          <widget class="QPushButton" name="btnStartStop">
            <property name="text">
             <string>启动程序</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QPushButton" name="btnStop">
-           <property name="text">
-            <string>停止程序</string>
            </property>
           </widget>
          </item>
