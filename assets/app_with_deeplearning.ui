@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <author>Neolux Lee</author>
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>896</width>
+    <height>504</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="2">
+    <layout class="QHBoxLayout" name="winRoot" stretch="0,2,1">
+     <item>
+      <layout class="QVBoxLayout" name="viewDisplay">
+       <item>
+        <widget class="QGraphicsView" name="imageOrig"/>
+       </item>
+       <item>
+        <widget class="QGraphicsView" name="imageProc"/>
+       </item>
+       <item>
+        <widget class="QPlainTextEdit" name="textLogging"/>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="viewCustom">
+       <item>
+        <widget class="QPlainTextEdit" name="textCustom"/>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="viewControl" stretch="0,0">
+       <item>
+        <layout class="QVBoxLayout" name="viewBtns">
+         <item>
+          <widget class="QPushButton" name="btnReboot">
+           <property name="text">
+            <string>系统重启</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btnPoweroff">
+           <property name="text">
+            <string>系统关机</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btnStart">
+           <property name="text">
+            <string>启动程序</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btnStop">
+           <property name="text">
+            <string>停止程序</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="viewValue">
+         <item>
+          <widget class="QLabel" name="lblThres">
+           <property name="text">
+            <string>阈值</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QSlider" name="sldThres">
+           <property name="orientation">
+            <enum>Qt::Orientation::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="lblThresValue">
+           <property name="text">
+            <string>0</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+   <item row="1" column="2">
+    <layout class="QVBoxLayout" name="viewStatus">
+     <item>
+      <widget class="QLabel" name="lblStatus">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
