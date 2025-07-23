@@ -1,0 +1,11 @@
+build
+install
+log
+
+.venv
+venv
+.conda
+conda
+
+.vscode
+

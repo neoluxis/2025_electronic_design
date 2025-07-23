@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=Nationale App
+Exec=/home/sunrise/dev_ws/nationale/app.bash
+Icon=utilities-terminal
+Terminal=true
+Categories=Utility;

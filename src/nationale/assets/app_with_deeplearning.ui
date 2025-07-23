@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <author>Neolux Lee</author>
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>896</width>
+    <height>504</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="1" column="2">
+    <layout class="QHBoxLayout" name="viewStatus">
+     <item>
+      <widget class="QLabel" name="lblFPS">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="0" column="2">
+    <layout class="QHBoxLayout" name="winRoot" stretch="0,0,0">
+     <item>
+      <layout class="QVBoxLayout" name="viewDisplay">
+       <item>
+        <widget class="QGraphicsView" name="imageOrig"/>
+       </item>
+       <item>
+        <widget class="QGraphicsView" name="imageProc"/>
+       </item>
+       <item>
+        <widget class="QPlainTextEdit" name="textLogging">
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="viewCustom">
+       <item>
+        <widget class="QPlainTextEdit" name="textCustom">
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="viewControl" stretch="0,0,0">
+       <item>
+        <layout class="QVBoxLayout" name="viewBtns">
+         <item>
+          <layout class="QHBoxLayout" name="viewBtnsCtrl">
+           <item>
+            <widget class="QPushButton" name="btnShutdown">
+             <property name="styleSheet">
+              <string notr="true">color: rgb(255, 0, 4);</string>
+             </property>
+             <property name="text">
+              <string>⚠️ 系统关机</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="btnReboot">
+             <property name="styleSheet">
+              <string notr="true">color: rgb(255, 0, 4);</string>
+             </property>
+             <property name="text">
+              <string>⚠️ 系统重启</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="viewBtnsSyst">
+           <item>
+            <widget class="QPushButton" name="btnStartStop">
+             <property name="text">
+              <string>启动程序</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="viewSelct">
+         <item>
+          <layout class="QHBoxLayout" name="viewCamera" stretch="0,1">
+           <item>
+            <widget class="QLabel" name="lblCamera">
+             <property name="text">
+              <string>相机 </string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QComboBox" name="sboxCamera">
+             <item>
+              <property name="text">
+               <string>/dev/video0</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>/dev/video2</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>/dev/video8</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="viewValue">
+         <item>
+          <layout class="QHBoxLayout" name="viewDLThres">
+           <item>
+            <widget class="QLabel" name="lblThres">
+             <property name="text">
+              <string>阈值</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QSlider" name="sldThres">
+             <property name="maximum">
+              <number>100</number>
+             </property>
+             <property name="singleStep">
+              <number>1</number>
+             </property>
+             <property name="pageStep">
+              <number>10</number>
+             </property>
+             <property name="value">
+              <number>85</number>
+             </property>
+             <property name="sliderPosition">
+              <number>85</number>
+             </property>
+             <property name="orientation">
+              <enum>Qt::Orientation::Horizontal</enum>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="lblThresValue">
+             <property name="text">
+              <string>0.85</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

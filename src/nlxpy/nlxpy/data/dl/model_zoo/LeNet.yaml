@@ -1,0 +1,38 @@
+# nlxpy/data/dl/model_zoo/LeNet.yaml
+# This file defines the LeNet model architecture to quick create model in NlxPy[DL]
+model:
+  name: LeNet
+  description: |
+    LeNet is a pioneering convolutional neural network architecture designed for handwritten digit recognition.
+    It consists of two convolutional layers followed by subsampling (pooling) layers, and two fully connected layers.
+  input_shape: [1, 28, 28]
+  output_shape: [10]
+
+nc: 10
+
+blocks:
+  - block: Conv2dBlock
+    name: conv
+    activation: relu
+    pooling: max
+    dropout: 0.5
+    batch_norm: true
+    cfg:
+      in_chns: 1
+      chns: [16, 32]
+      ker: [5, 5]
+      stride: [1, 1]
+      padding: [2, 2]
+  - block: Flatten
+    name: flatten
+  - block: MLP
+    name: fc
+    activation: relu
+    dropout: 0.5
+    cfg:
+      in_features: auto
+      out_features: [120, 84, nc]
+      batch_norm: true
+      dropout: 0.5
+
+      
