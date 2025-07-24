@@ -42,4 +42,4 @@ export QT_QPA_PLATFORM=xcb
 # 启动程序
 ros2 run nationale app_cuno_dl
 
-bash
+# bash

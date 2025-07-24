@@ -100,7 +100,6 @@ class AppWindow(QMainWindow):
             slider.sliderReleased.connect(
                 lambda index=i: self.on_threshold_slider_released(index)
             )
-        # self.ui.sldThres.sliderReleased.connect(self.on_threshold_slider_released)
 
     def load_ui(self):
         self.uipath = os.path.join(self.assets_path, "app_traditional.ui")
@@ -135,14 +134,20 @@ class AppWindow(QMainWindow):
         if index == 0:
             self.color_mode = self.color_modes_candidate[value]
             self.ui.lbvColorMode.setText(self.color_mode)
-            self.logging("info", f"Color mode set to {self.color_mode}")
+            # self.logging("info", f"Color mode set to {self.color_mode}")
         else:
             thres_value = value
             self.thres_labels[index].setText(f"{thres_value:3d}")
-            self.logging("info", f"Threshold {index} set to {thres_value}")
+            # self.logging("info", f"Threshold {index} set to {thres_value}")
+        t0 = time.time()
         self.node.set_thresholds(
             self.color_mode,
             [slider.value() for slider in self.thres_sliders[1:]],
+        )
+        t1 = time.time()
+        self.logging(
+            "info",
+            f"Thresholds set in {self.threshold_path} in {t1 - t0:.2f} seconds.",
         )
 
     def on_threshold_slider_released(self, index=None):
@@ -164,7 +169,9 @@ class AppWindow(QMainWindow):
             )
             if self.color_mode == "hsv":
                 self.ui.sldv1.setMaximum(179)
+                self.ui.sldv1.setValue(0)
                 self.ui.sldv2.setMaximum(179)
+                self.ui.sldv2.setValue(179)
                 self.ui.sldv3.setMaximum(255)
                 self.ui.sldv4.setMaximum(255)
                 self.ui.sldv5.setMaximum(255)
@@ -172,7 +179,9 @@ class AppWindow(QMainWindow):
                 self.logging("info", "Switched to HSV color mode.")
             elif self.color_mode == "bgr":
                 self.ui.sldv1.setMaximum(255)
+                self.ui.sldv1.setValue(0)
                 self.ui.sldv2.setMaximum(255)
+                self.ui.sldv2.setValue(255)
                 self.ui.sldv3.setMaximum(255)
                 self.ui.sldv4.setMaximum(255)
                 self.ui.sldv5.setMaximum(255)

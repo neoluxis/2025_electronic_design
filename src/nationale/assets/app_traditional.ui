@@ -81,6 +81,31 @@
          </item>
          <item row="6" column="1">
           <widget class="QSlider" name="sldv6">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QSlider::groove:horizontal {
+    border: 1px solid #999;
+    height: 16px;                /* 滑轨变粗 */
+    background: #ddd;
+    border-radius: 8px;
+    margin: 0 20px;
+}
+
+QSlider::handle:horizontal {
+    background: #0078d7;         /* 蓝色圆柄 */
+    border: 1px solid #444;
+    width: 36px;                 /* 柄变大 */
+    height: 36px;
+    margin: -10px 0;             /* 垂直居中对齐轨道 */
+    border-radius: 18px;
+}
+</string>
+           </property>
            <property name="maximum">
             <number>255</number>
            </property>
@@ -104,6 +129,31 @@
          </item>
          <item row="3" column="1">
           <widget class="QSlider" name="sldv3">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QSlider::groove:horizontal {
+    border: 1px solid #999;
+    height: 16px;                /* 滑轨变粗 */
+    background: #ddd;
+    border-radius: 8px;
+    margin: 0 20px;
+}
+
+QSlider::handle:horizontal {
+    background: #0078d7;         /* 蓝色圆柄 */
+    border: 1px solid #444;
+    width: 36px;                 /* 柄变大 */
+    height: 36px;
+    margin: -10px 0;             /* 垂直居中对齐轨道 */
+    border-radius: 18px;
+}
+</string>
+           </property>
            <property name="maximum">
             <number>255</number>
            </property>
@@ -114,6 +164,31 @@
          </item>
          <item row="4" column="1">
           <widget class="QSlider" name="sldv4">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QSlider::groove:horizontal {
+    border: 1px solid #999;
+    height: 16px;                /* 滑轨变粗 */
+    background: #ddd;
+    border-radius: 8px;
+    margin: 0 20px;
+}
+
+QSlider::handle:horizontal {
+    background: #0078d7;         /* 蓝色圆柄 */
+    border: 1px solid #444;
+    width: 36px;                 /* 柄变大 */
+    height: 36px;
+    margin: -10px 0;             /* 垂直居中对齐轨道 */
+    border-radius: 18px;
+}
+</string>
+           </property>
            <property name="maximum">
             <number>255</number>
            </property>
@@ -137,6 +212,31 @@
          </item>
          <item row="1" column="1">
           <widget class="QSlider" name="sldv1">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QSlider::groove:horizontal {
+    border: 1px solid #999;
+    height: 16px;                /* 滑轨变粗 */
+    background: #ddd;
+    border-radius: 8px;
+    margin: 0 20px;
+}
+
+QSlider::handle:horizontal {
+    background: #0078d7;         /* 蓝色圆柄 */
+    border: 1px solid #444;
+    width: 36px;                 /* 柄变大 */
+    height: 36px;
+    margin: -10px 0;             /* 垂直居中对齐轨道 */
+    border-radius: 18px;
+}
+</string>
+           </property>
            <property name="maximum">
             <number>255</number>
            </property>
@@ -187,6 +287,31 @@
          </item>
          <item row="5" column="1">
           <widget class="QSlider" name="sldv5">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QSlider::groove:horizontal {
+    border: 1px solid #999;
+    height: 16px;                /* 滑轨变粗 */
+    background: #ddd;
+    border-radius: 8px;
+    margin: 0 20px;
+}
+
+QSlider::handle:horizontal {
+    background: #0078d7;         /* 蓝色圆柄 */
+    border: 1px solid #444;
+    width: 36px;                 /* 柄变大 */
+    height: 36px;
+    margin: -10px 0;             /* 垂直居中对齐轨道 */
+    border-radius: 18px;
+}
+</string>
+           </property>
            <property name="maximum">
             <number>255</number>
            </property>
@@ -207,6 +332,31 @@
          </item>
          <item row="2" column="1">
           <widget class="QSlider" name="sldv2">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QSlider::groove:horizontal {
+    border: 1px solid #999;
+    height: 16px;                /* 滑轨变粗 */
+    background: #ddd;
+    border-radius: 8px;
+    margin: 0 20px;
+}
+
+QSlider::handle:horizontal {
+    background: #0078d7;         /* 蓝色圆柄 */
+    border: 1px solid #444;
+    width: 36px;                 /* 柄变大 */
+    height: 36px;
+    margin: -10px 0;             /* 垂直居中对齐轨道 */
+    border-radius: 18px;
+}
+</string>
+           </property>
            <property name="maximum">
             <number>255</number>
            </property>
@@ -250,6 +400,31 @@
          </item>
          <item row="0" column="1">
           <widget class="QSlider" name="sldColorMode">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QSlider::groove:horizontal {
+    border: 1px solid #999;
+    height: 16px;                /* 滑轨变粗 */
+    background: #ddd;
+    border-radius: 8px;
+    margin: 0 20px;
+}
+
+QSlider::handle:horizontal {
+    background: #0078d7;         /* 蓝色圆柄 */
+    border: 1px solid #444;
+    width: 36px;                 /* 柄变大 */
+    height: 36px;
+    margin: -10px 0;             /* 垂直居中对齐轨道 */
+    border-radius: 18px;
+}
+</string>
+           </property>
            <property name="maximum">
             <number>1</number>
            </property>
