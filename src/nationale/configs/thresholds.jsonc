@@ -1,0 +1,10 @@
+{
+    "color_mode": "bgr",
+    "thresholds": [
+        0, 255, 0, 255, 0, 255
+    ],
+    "color_modes_candidate": [
+        "bgr",
+        "hsv"
+    ]
+}

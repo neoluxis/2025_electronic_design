@@ -15,6 +15,7 @@ setup(
         ('share/' + package_name + '/assets', glob('assets/*')),
         ('share/' + package_name + '/configs', glob('configs/*')),
         ('share/' + package_name + '/launch', glob('launch/*.launch.py')),
+        ('share/' + package_name + '/srv', glob('srv/*.srv')),
     ],
     install_requires=['setuptools'],
     zip_safe=True,
@@ -25,7 +26,9 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            "app = nationale.app_cu_dl:main",
+            "app_cu_dl = nationale.app_cu_dl:main",
+            "app_cuno_dl = nationale.app_cuno_dl:main",
+            "threshold_filter = apps.threshold_filter:main",
         ],
     },
 )
