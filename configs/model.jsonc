@@ -1,0 +1,19 @@
+{
+        "model_file": "/opt/hobot/model/x5/basic/yolov8_640x640_nv12.bin",
+        "task_num": 4,
+        // DNN解析器类型: yolov8, yolov8_seg, yolov5x, yolov10, yolov2, yolov3
+        "dnn_Parser": "yolov8", 
+        // model 输出个数
+        "model_output_count": 6,
+        "reg_max": 16,
+        // 类别个数
+        "class_num": 80,
+        // 类别名称列表
+        "cls_names_list": "config/coco.list",
+        "strides": [8, 16, 32],
+        // 阈值
+        "score_threshold": 0.25,
+        "nms_threshold": 0.7,
+        "nms_top_k": 300,
+        "output_order": [0,1,2,3,4,5]
+}
