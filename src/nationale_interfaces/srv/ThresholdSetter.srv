@@ -1,0 +1,4 @@
+string color_mode
+int32[] thresholds
+---
+bool success
